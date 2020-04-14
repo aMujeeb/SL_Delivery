@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+		<variable
+			name="menuPaneItem"
+			type="com.supplier.sl_delivery.modals.MenuPaneItem" />
+
+		<variable
+			name="menuSelector"
+			type="com.supplier.sl_delivery.ui.adapter.listeners.OnMenuItemSelected" />
+	</data>
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/mMenuLayout"
+		tools:context=".ui.activities.main.MainActivity"
+		android:onClick="@{(view) -> menuSelector.onMainMenuSelected(menuPaneItem, view)}">
+
+		<ImageView
+			android:id="@+id/mImgMenu"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			android:scaleType="fitXY"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:src="@{menuPaneItem.menuIcon}" />
+
+		<TextView
+			android:id="@+id/mLblMenuName"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginEnd="16dp"
+			android:layout_marginBottom="16dp"
+			style="@style/generalLabelTextBold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/mImgMenu"
+			app:layout_constraintTop_toTopOf="parent"
+			android:text="@{menuPaneItem.menuName}"/>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

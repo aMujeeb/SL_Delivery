@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/gap_8"
+    app:cardCornerRadius="@dimen/gap_4"
+    app:cardElevation="@dimen/gap_4" app:cardBackgroundColor="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/gap_2" android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/mCategoryImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/gap_16"
+            android:layout_marginTop="@dimen/gap_8"
+            android:layout_marginRight="@dimen/gap_16"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_shopping_basket" />
+
+        <TextView
+            android:id="@+id/mLblCategoryName"
+            style="@style/generalLabelTextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mCategoryImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/gap_16"
+            android:layout_marginTop="@dimen/gap_8"
+            android:layout_marginRight="@dimen/gap_16"
+            android:layout_marginBottom="@dimen/gap_8"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

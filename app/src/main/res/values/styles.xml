@@ -1,0 +1,205 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="App_NOActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="generalLabelText" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="generalLabelTextBold" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="generalLabelTextThin" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="generalLabelTextSmall" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="generalLabelSmallBold" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre_bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="generalLabelSmallThin" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre_light</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+	<style name="generalLabelTextMedium" parent="@android:style/TextAppearance.Widget.TextView">
+		<item name="android:fontFamily">@font/averia_libre</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:paddingBottom">3dp</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:layout_marginLeft">12dp</item>
+		<item name="android:layout_marginRight">12dp</item>
+		<item name="android:gravity">bottom</item>
+		<item name="android:textColor">@color/general_text_color</item>
+	</style>
+
+	<style name="generalLabelMediumBold" parent="@android:style/TextAppearance.Widget.TextView">
+		<item name="android:fontFamily">@font/averia_libre_bold</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:paddingBottom">3dp</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:layout_marginLeft">12dp</item>
+		<item name="android:layout_marginRight">12dp</item>
+		<item name="android:gravity">bottom</item>
+		<item name="android:textColor">@color/general_text_color</item>
+	</style>
+
+	<style name="generalLabelMediumThin" parent="@android:style/TextAppearance.Widget.TextView">
+		<item name="android:fontFamily">@font/averia_libre_light</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:paddingBottom">3dp</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:layout_marginLeft">12dp</item>
+		<item name="android:layout_marginRight">12dp</item>
+		<item name="android:gravity">bottom</item>
+		<item name="android:textColor">@color/general_text_color</item>
+	</style>
+
+    <style name="generalLabelTextLarge" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="generalLabelLargeBold" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="generalLabelLargeThin" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre_light</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+	<style name="generalEditTextValue" parent="@android:style/TextAppearance.Widget.EditText">
+		<item name="android:fontFamily">@font/averia_libre</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:layout_marginTop">12dp</item>
+		<item name="android:layout_marginRight">16dp</item>
+		<item name="android:layout_marginLeft">16dp</item>
+		<item name="android:layout_marginBottom">12dp</item>
+		<item name="android:paddingLeft">8dp</item>
+		<item name="android:paddingRight">8dp</item>
+		<item name="android:textColor">@color/general_text_color</item>
+		<item name="android:textColorHint">@color/general_hint_color</item>
+		<item name="android:background">@drawable/general_input_background</item>
+	</style>
+
+    <style name="generalLabelLargeHeader" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:fontFamily">@font/averia_libre_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+	<style name="generalButton" parent="Base.TextAppearance.AppCompat.Widget.Button">
+		<item name="android:fontFamily">@font/averia_libre_bold</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:layout_height">45dp</item>
+		<item name="android:background">@drawable/button_background</item>
+	</style>
+</resources>

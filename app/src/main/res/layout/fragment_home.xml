@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mCardCalendar"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="@dimen/gap_4"
+        app:cardElevation="@dimen/gap_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mCLReveneuToday"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/gap_2"
+                android:layout_marginTop="@dimen/gap_2"
+                android:layout_marginEnd="@dimen/gap_2"
+                android:layout_marginBottom="@dimen/gap_2"
+                android:background="@color/pink" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mCLSalesTarget"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/mCardCalendar"
+        app:layout_constraintEnd_toStartOf="@+id/mCLReveneuToday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/gap_2"
+            app:cardCornerRadius="@dimen/gap_4"
+            app:cardElevation="@dimen/gap_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/mLblSalesTarget"
+                    style="@style/generalLabelTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/gap_12"
+                    android:text="@string/sales_target"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/mLblSalesTargetValue"
+                    style="@style/generalLabelMediumBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mLblSalesTarget"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/gap_16"
+                    android:text="12343477.00"
+                    android:textColor="@color/white" />
+
+                <SeekBar
+                    android:id="@+id/mSeekTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mLblSalesTargetValue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/gap_24"
+                    android:progress="56" />
+
+                <Button
+                    android:id="@+id/mBtnSetTarget"
+                    style="@style/generalButton"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/gap_12"
+                    android:text="@string/set_target" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mCLReveneuToday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/mCardCalendar"
+        app:layout_constraintEnd_toStartOf="@+id/mCardCalendar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mCLSalesTarget"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/gap_2"
+            app:cardCornerRadius="@dimen/gap_4"
+            app:cardElevation="@dimen/gap_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/nature_green">
+
+                <TextView
+                    android:id="@+id/mLblTodayRevenue"
+                    style="@style/generalLabelTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mLblTodayRevenueValue"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/today_revenue"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/mLblTodayRevenueValue"
+                    style="@style/generalLabelTextLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/gap_32"
+                    android:text="7843477.00"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mConsInventory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mConstPendingOrders"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mCLSalesTarget">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/gap_2"
+            app:cardCornerRadius="@dimen/gap_4"
+            app:cardElevation="@dimen/gap_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sky_blue">
+
+                <TextView
+                    android:id="@+id/mLblInventory"
+                    style="@style/generalLabelTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/gap_12"
+                    android:text="@string/stocks_limit"
+                    android:textColor="@color/general_text_color" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/mPieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/mLblInventory"
+                    android:layout_margin="@dimen/gap_12" />
+                <!--<com.anychart.AnyChartView
+                    android:id="@+id/mAnyChartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/mLblInventory"
+                    android:layout_margin="@dimen/gap_12" />-->
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mConstPendingOrders"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mConsCompletedOrders"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mConsInventory"
+        app:layout_constraintTop_toBottomOf="@+id/mCLReveneuToday">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/gap_2"
+            app:cardCornerRadius="@dimen/gap_4"
+            app:cardElevation="@dimen/gap_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/golden_brown">
+
+                <TextView
+                    android:id="@+id/mLblPendingOrders"
+                    style="@style/generalLabelTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/mLblPendingOrdersValue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/gap_12"
+                    android:text="@string/pending_orders"
+                    android:textColor="@color/general_text_color" />
+
+                <TextView
+                    android:id="@+id/mLblPendingOrdersValue"
+                    style="@style/generalLabelLargeHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="77"
+                    android:textColor="@color/general_text_color"
+                    android:textSize="36sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mConsCompletedOrders"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mConstPendingOrders"
+        app:layout_constraintTop_toBottomOf="@+id/mCardCalendar">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/gap_2"
+            app:cardCornerRadius="@dimen/gap_4"
+            app:cardElevation="@dimen/gap_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pale_green">
+
+                <TextView
+                    android:id="@+id/mLblCompletedOrders"
+                    style="@style/generalLabelTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/mLblCompletedOrdersValue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/gap_12"
+                    android:text="@string/completed_orders"
+                    android:textColor="@color/general_text_color" />
+
+                <TextView
+                    android:id="@+id/mLblCompletedOrdersValue"
+                    style="@style/generalLabelLargeHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="45"
+                    android:textColor="@color/general_text_color"
+                    android:textSize="36sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

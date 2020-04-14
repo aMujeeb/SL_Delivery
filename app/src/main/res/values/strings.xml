@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">SL-Delivery</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <!-- Login -->
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up"><a href="">Sign Up</a></string>
+    <string name="login_error">Login Error</string>
+    <string name="contact_number_error">Contact Number Error</string>
+    <string name="password_error">Password Error</string>
+
+    <!-- Register -->
+    <string name="supplier_business_name">Supplier or Business Name</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="address">Address</string>
+    <string name="telephone_number">Mobile / Telephone Number</string>
+    <string name="nic_biz_reg">NIC / Business Registration</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="business_name_error">Business Name Cannot Error</string>
+    <string name="owner_name_error">Owner Name Cannot Error</string>
+    <string name="address_error">Address cannot be empty or improper</string>
+    <string name="mobile_number_error">Mobile number cannot be empty or improper</string>
+    <string name="password_confirm_error">Confirm Password Cannot be empty or improper</string>
+    <string name="password_not_matching">Passwords do not match each other</string>
+    <string name="nic_biz_reg_error">NIC / Business Registration Cannot be empty</string>
+    <string name="user_register_error">User Registration Error..!!</string>
+
+
+    <!-- Main Categories -->
+    <string name="categories_error">Some error Occurred…!!!! Please try Again…!!!</string>
+    <string name="retry">retry</string>
+
+    <!-- Category Items -->
+
+    <!-- Main Menu -->
+    <string name="home">Home</string>
+    <string name="products">Products</string>
+    <string name="orders">Orders</string>
+    <string name="stocks">Stocks</string>
+    <string name="inventory">Inventory</string>
+    <string name="reports">Reports</string>
+    <string name="settings">Settings</string>
+    <string name="sales_target">Sales Target (Rs:)</string>
+    <string name="set_target">Set Target</string>
+    <string name="today_revenue">Today\'s Revenue (Rs:)</string>
+    <string name="stocks_limit">Stocks Limit</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="completed_orders">Completed Orders</string>
+    <string name="ok">OK</string>
+
+    <!-- Message Type -->
+    <string name="information">Information</string>
+    <string name="error">Error</string>
+    <string name="alert">Alert</string>
+</resources>
